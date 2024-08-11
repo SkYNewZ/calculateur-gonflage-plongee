@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul temps de gonflage bouteilles</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul temps de gonflage bouteilles</h1>
+
+         <!-- Lien vers GitHub avec le logo -->
+         <p>
+            <a href="https://github.com/SkYNewZ/calculateur-gonflage-plongee" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                Voir le projet sur GitHub
+            </a>
+        </p>
+
+        <div class="input-group">
+            <label for="debit">Débit du compresseur (m³/h) :</label>
+            <input type="number" id="debit" value="45">
+        </div>
+        
+        <div class="input-group">
+            <label for="pressionMax">Pression maximale (bar) :</label>
+            <input type="number" id="pressionMax" value="245">
+        </div>
+
+        <div class="input-group">
+            <label for="pressionInitiale">Pression d'équilibre initiale (bar) :</label>
+            <input type="number" id="pressionInitiale" value="100">
+        </div>
+
+        <h2>Saisir le nombre de bouteilles à gonfler :</h2>
+        
+        <div class="input-group">
+            <label for="bouteilles6">Bouteilles de 6L :</label>
+            <input type="number" id="bouteilles6" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="bouteilles9">Bouteilles de 9L :</label>
+            <input type="number" id="bouteilles9" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="bouteilles12">Bouteilles de 12L :</label>
+            <input type="number" id="bouteilles12" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="bouteilles15">Bouteilles de 15L :</label>
+            <input type="number" id="bouteilles15" value="0">
+        </div>
+
+        <button onclick="calculer()">Calculer</button>
+
+        <h2>Résultats :</h2>
+        <p id="resultats"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
